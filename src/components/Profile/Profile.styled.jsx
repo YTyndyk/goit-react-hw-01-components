@@ -2,12 +2,14 @@ import styled from '@emotion/styled';
 
 export const Card = styled.div`
   color: #010101;
+  width: 300px;
   background-color: #e6e6ed;
   text-align: center;
   border-radius: 4px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 0px;
+  margin-bottom: 70px;
 `;
 export const Avatar = styled.img`
   width: 150px;
@@ -20,6 +22,7 @@ export const UserName = styled.p`
 export const Statistic = styled.ul`
   list-style: none;
   display: flex;
+  justify-content: center;
   padding: 0;
   margin-bottom: 10px;
 `;
@@ -27,7 +30,7 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   width: 70px;
-  padding: 5px;
+  padding: 10px;
   background-color: #d28484;
   border-radius: 3px;
   :not(:last-child) {
