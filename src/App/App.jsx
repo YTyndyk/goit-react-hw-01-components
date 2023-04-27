@@ -1,9 +1,9 @@
 import { Profile } from 'components/Profile/Profile';
-import css from 'components/Profile/Profile.module.css';
 import user from 'components/Profile/user.json';
+import { Container } from './App.styled';
 export const App = () => {
   return (
-    <div className={css.style}>
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -11,6 +11,6 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-    </div>
+    </Container>
   );
 };
