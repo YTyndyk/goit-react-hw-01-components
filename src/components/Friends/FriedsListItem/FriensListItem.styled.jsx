@@ -20,7 +20,7 @@ export const Status = styled.span`
   height: 16px;
   border-radius: 50%;
   background-color: ${props => {
-    return props.isOnline ? 'green' : 'red';
+    return props.children ? 'green' : 'red';
   }};
 `;
 
