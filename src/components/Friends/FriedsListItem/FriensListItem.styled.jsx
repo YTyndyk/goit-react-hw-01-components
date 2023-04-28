@@ -28,7 +28,7 @@ export const Image = styled.img`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
+  width: 50px;
    background: #ecf0f3;
 
   }
