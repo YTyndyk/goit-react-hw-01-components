@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import data from '../../Friends/friends.json';
 export const FriendItem = styled.li`
   display: flex;
   align-items: center;
