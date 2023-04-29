@@ -1,14 +1,21 @@
 import PropTypes from 'prop-types';
-import { Table, Tr, ExtendedTr, Td, Type } from './TransactionHistory.staled';
+import {
+  Table,
+  Tr,
+  ExtendedTr,
+  Th,
+  Td,
+  Type,
+} from './TransactionHistory.staled';
 
 export function TransactionHistory({ items }) {
   return (
     <Table>
       <thead>
         <Tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <Th>Type</Th>
+          <Th>Amount</Th>
+          <Th>Currency</Th>
         </Tr>
       </thead>
 
