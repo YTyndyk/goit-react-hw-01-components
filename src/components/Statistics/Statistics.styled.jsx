@@ -8,17 +8,16 @@ export const CardSection = styled.section`
 `;
 export const Title = styled.h2`
   margin-block-end: 0;
-  background-color: #e6e6ed;
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
   height: 60px;
   text-align: center;
-  border-bottom: 1px solid #d3d5e3;
 `;
 export const List = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-around;
-  padding: 0;
-  margin: 0;
+  padding: ${({ theme }) => theme.spacing(0)};
+  margin: ${({ theme }) => theme.spacing(0)};
 `;
 export const Item = styled.li`
   display: flex;

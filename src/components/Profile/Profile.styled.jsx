@@ -1,20 +1,19 @@
 import styled from '@emotion/styled';
 
 export const Card = styled.div`
-  color: #010101;
+  color: ${({ theme }) => theme.colors.black};
   width: 300px;
-  background-color: #e6e6ed;
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
   text-align: center;
   border-radius: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0px;
-  margin-bottom: 70px;
+  padding-left: ${({ theme }) => theme.spacing(2)};
+  padding-right: ${({ theme }) => theme.spacing(2)};
+  margin-bottom: ${({ theme }) => theme.spacing(17)};
 `;
 export const Avatar = styled.img`
   width: 150px;
   border-radius: 50%;
-  background-color: #d28484;
+  background-color: ${({ theme }) => theme.colors.backgroundColorAvatar};
 `;
 export const UserName = styled.p`
   font-size: 30px;
@@ -23,18 +22,18 @@ export const Statistic = styled.ul`
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin-bottom: 10px;
+  padding: ${({ theme }) => theme.spacing(0)};
+  margin-bottom: ${({ theme }) => theme.spacing(2)};
 `;
 export const Item = styled.li`
   display: flex;
   flex-direction: column;
   width: 70px;
-  padding: 10px;
-  background-color: #d28484;
+  padding: ${({ theme }) => theme.spacing(2)};
+  background-color: ${({ theme }) => theme.colors.backgroundColorAvatar};
   border-radius: 3px;
   :not(:last-child) {
-    margin-right: 10px;
+    margin-right: ${({ theme }) => theme.spacing(2)};
   }
 `;
 export const Quantity = styled.span`
